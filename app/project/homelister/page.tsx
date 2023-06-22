@@ -59,6 +59,7 @@ export default function HomeLister() {
               src={GPTDescriptionsPic}
               alt="A screenshot of the ChatGPT-powered Listing Flow Description page of the HomeLister website"
               className='border'
+              placeholder="blur"
             />
           </div>
           <div className="flex flex-col gap-4">
@@ -77,6 +78,7 @@ export default function HomeLister() {
               src={StorybookPic}
               alt="A screenshot of a Storybook showing the SliderInput component on Chromatic"
               className='border'
+              placeholder="blur"
             />
           </div>
           <div className="flex flex-col gap-4">
@@ -96,6 +98,7 @@ export default function HomeLister() {
               src={ContractEscrowPic}
               alt="A screenshot of Escrow Documents History"
               className='border'
+              placeholder="blur"
             />
             {/* <Image
               src={EscrowHistoryPic}
@@ -138,6 +141,7 @@ export default function HomeLister() {
             <Image
               src={ABTestPic}
               alt="A comparison of two HomeLister Homepage variants, one labled A and the other B"
+              placeholder="blur"
             />
           </div>
           <div className="flex flex-col gap-4">
@@ -156,6 +160,7 @@ export default function HomeLister() {
               src={BrokerageConsolePic}
               alt="A screenshot of the admin-only brokerage console"
               className='border'
+              placeholder="blur"
             />
           </div>
           <div className="flex flex-col gap-4">
@@ -174,6 +179,7 @@ export default function HomeLister() {
             <Image
               src={LighthousePic}
               alt="Screenshot of a Chrome Lighthouse performance audit result from June 2021 for the HomeLister homepage"
+              placeholder="blur"
             />
           </div>
           <div className="flex flex-col gap-4">
