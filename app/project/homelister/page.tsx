@@ -39,6 +39,7 @@ export default function HomeLister() {
             <Image
               src={HomesForSalePic}
               alt="A screenshot of the map-based Homes for Sale page of the HomeLister website"
+              className='border'
             />
           </div>
           <div className="flex flex-col gap-4">
@@ -57,6 +58,7 @@ export default function HomeLister() {
             <Image
               src={GPTDescriptionsPic}
               alt="A screenshot of the ChatGPT-powered Listing Flow Description page of the HomeLister website"
+              className='border'
             />
           </div>
           <div className="flex flex-col gap-4">
@@ -74,6 +76,7 @@ export default function HomeLister() {
             <Image
               src={StorybookPic}
               alt="A screenshot of a Storybook showing the SliderInput component on Chromatic"
+              className='border'
             />
           </div>
           <div className="flex flex-col gap-4">
@@ -92,6 +95,7 @@ export default function HomeLister() {
             <Image
               src={ContractEscrowPic}
               alt="A screenshot of Escrow Documents History"
+              className='border'
             />
             {/* <Image
               src={EscrowHistoryPic}
@@ -115,6 +119,7 @@ export default function HomeLister() {
               src="/hl-product-tour.mov"
               muted
               controls
+              className='border'
             />
           </div>
           <div className="flex flex-col gap-4">
@@ -150,6 +155,7 @@ export default function HomeLister() {
             <Image
               src={BrokerageConsolePic}
               alt="A screenshot of the admin-only brokerage console"
+              className='border'
             />
           </div>
           <div className="flex flex-col gap-4">
