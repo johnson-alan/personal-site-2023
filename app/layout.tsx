@@ -30,7 +30,7 @@ export default function RootLayout({
 
   const ref = useRef<HTMLHeadingElement>(null)
 
-  const mainStyles = "h-screen relative flex flex-col justify-between content-start p-4 md:p-24"
+  const mainStyles = "relative flex flex-col justify-between content-start p-4 md:p-24"
 
   const navStylesBase = pathname === '/'
     ? 'nav z-10 flex flex-col absolute left-4 bottom-4 md:left-24 md:bottom-24 transition-transform duration-1000'

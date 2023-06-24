@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@supports (-webkit-touch-callout: none) {
-  .h-screen {
-    height: -webkit-fill-available;
-  }
-}
-
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-rgb: 255, 255, 255;
@@ -16,6 +10,10 @@
 body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-rgb));
+}
+
+main {
+  min-height: 100dvh;
 }
 
 .fade {
