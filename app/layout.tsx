@@ -89,7 +89,7 @@ export default function RootLayout({
     })
 
     if (ref.current) {
-      ref.current.style.transform = `translateY(calc(-100vh + ${paddingOffset}rem + ${heightOffset}px))`
+      ref.current.style.transform = `translateY(calc(-100vh + ${paddingOffset}rem + ${heightOffset}px + env(safe-area-inset-top)))`
     }
 
   }, [pathname, selectedProject, navStylesBase, width])
