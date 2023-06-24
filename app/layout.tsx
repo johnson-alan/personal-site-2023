@@ -80,6 +80,7 @@ export default function RootLayout({
     const navItemHeight = getNavItemHeight()
     const paddingOffset = getPaddingOffset()
     const heightOffset = (projects.length * navItemHeight) - (projectIndex * navItemHeight) - NAV_ITEM_MARGIN + NAV_ITEM_DETAILS_HEIGHT
+    // const mobileOffset = (width && width < 768) ? 110 : 0;
 
     console.log({
       projectIndex,
@@ -89,7 +90,7 @@ export default function RootLayout({
     })
 
     if (ref.current) {
-      ref.current.style.transform = `translateY(calc(-100vh + ${paddingOffset}rem + ${heightOffset}px + env(safe-area-inset-top)))`
+      ref.current.style.transform = `translateY(calc(-100dvh + ${paddingOffset}rem + ${heightOffset}px))`
     }
 
   }, [pathname, selectedProject, navStylesBase, width])
