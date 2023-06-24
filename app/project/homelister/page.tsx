@@ -16,6 +16,7 @@ import CheckoutPic from '../../../public/homelister/hl-checkout.png'
 import DashboardPic from '../../../public/homelister/hl-dashboard.png'
 import PricingPagePic from '../../../public/homelister/hl-pricing-page.png'
 import PublicListingPic from '../../../public/homelister/hl-public-listing.png'
+import SelectedWorkInformation from '../SelectedProjectInformation'
 
 export default function HomeLister() {
   return (
@@ -30,18 +31,12 @@ export default function HomeLister() {
         <h1 className="text-3xl font-bold text-left">Selected Work</h1>
         <div className="flex flex-col gap-16">
           <div className="flex flex-col gap-4">
-            <div>
-              <div className="flex flex-row gap-2 items-baseline">
-                <h2 className="text-2xl font-bold text-left">
-                  Homes For Sale
-                </h2>
-                <h5 className="text-sm text-left">
-                  2023
-                </h5>
-              </div>
-              <p>Map-based search view for HomeLister listings</p>
-              <Badge>Sole Developer</Badge>
-            </div>
+            <SelectedWorkInformation
+              title="Homes For Sale"
+              timePeriod="2023"
+              description="Map-based search view for HomeLister listings"
+              soleDeveloper
+            />
             <Image
               src={HomesForSalePic}
               alt="A screenshot of the map-based Homes for Sale page of the HomeLister website"
@@ -49,18 +44,12 @@ export default function HomeLister() {
             />
           </div>
           <div className="flex flex-col gap-4">
-            <div>
-              <div className="flex flex-row gap-2 items-baseline">
-                <h2 className="text-2xl font-bold text-left">
-                  Auto-Generated Listing Descriptions
-                </h2>
-                <h5 className="text-sm text-left">
-                  2023
-                </h5>
-                </div>
-              <p>ChatGPT-based listing descriptions generated via customer-selected feature salience preferences</p>
-              <Badge>Sole Developer</Badge>
-            </div>
+            <SelectedWorkInformation
+              title="Auto-Generated Listing Descriptions"
+              timePeriod="2023"
+              description="ChatGPT-based listing descriptions generated via customer-selected feature salience preferences"
+              soleDeveloper
+            />
             <Image
               src={GPTDescriptionsPic}
               alt="A screenshot of the ChatGPT-powered Listing Flow Description page of the HomeLister website"
@@ -69,17 +58,11 @@ export default function HomeLister() {
             />
           </div>
           <div className="flex flex-col gap-4">
-            <div>
-              <div className="flex flex-row gap-2 items-baseline">
-                <h2 className="text-2xl font-bold text-left">
-                  HomeLister Design System
-                </h2>
-                <h5 className="text-sm text-left">
-                  2022
-                </h5>
-                </div>
-              <p>Crossfunctional initiative between Product, Design, and Dev teams to create a smooth multiplatform pipeline (JIRA, Figma, Chromatic/Storybook) for implementing and maintaining a robust, reusable component library</p>
-            </div>
+            <SelectedWorkInformation
+              title="HomeLister Design System"
+              timePeriod="2022"
+              description="Crossfunctional initiative between Product, Design, and Dev teams to create a smooth multiplatform pipeline (JIRA, Figma, Chromatic/Storybook) for implementing and maintaining a robust, reusable component library"
+            />
             <Image
               src={StorybookPic}
               alt="A screenshot of a Storybook showing the SliderInput component on Chromatic"
@@ -88,42 +71,26 @@ export default function HomeLister() {
             />
           </div>
           <div className="flex flex-col gap-4">
-            <div>
-              <div className="flex flex-row gap-2 items-baseline">
-                <h2 className="text-2xl font-bold text-left">
-                  Transactions Management
-                </h2>
-                <h5 className="text-sm text-left">
-                  2022
-                </h5>
-                </div>
-              <p>Refactored and greatly expanded a basic contract model into a comprehensive set of offer, escrow, and contact models, APIs, and utilities to serve as the foundation for full-lifecycle transaction management</p>
-              <Badge>Sole Developer</Badge>
-            </div>
+            <SelectedWorkInformation
+              title="Transactions Management"
+              timePeriod="2022"
+              description="Refactored and greatly expanded a basic contract model into a comprehensive set of offer, escrow, and contact models, APIs, and utilities to serve as the foundation for full-lifecycle transaction management"
+              soleDeveloper
+              />
             <Image
               src={ContractEscrowPic}
               alt="A screenshot of Escrow Documents History"
               className='border'
               placeholder="blur"
             />
-            {/* <Image
-              src={EscrowHistoryPic}
-              alt="A screenshot of Escrow Documents History"
-            /> */}
           </div>
           <div className="flex flex-col gap-4">
-            <div>
-              <div className="flex flex-row gap-2 items-baseline">
-                <h2 className="text-2xl font-bold text-left">
-                  New User Listing Flow Product Tour
-                </h2>
-                <h5 className="text-sm text-left">
-                  2022
-                </h5>
-                </div>
-              <p>Optional onboarding tour improved top-of-funnel retention by 12%</p>
-              <Badge>Sole Developer</Badge>
-            </div>
+            <SelectedWorkInformation
+              title="New User Listing Flow Product Tour"
+              timePeriod="2022"
+              description="Optional onboarding tour improved top-of-funnel retention by 12%"
+              soleDeveloper
+            />
             <video
               src="/homelister/hl-product-tour.mov"
               muted
@@ -132,18 +99,12 @@ export default function HomeLister() {
             />
           </div>
           <div className="flex flex-col gap-4">
-            <div>
-              <div className="flex flex-row gap-2 items-baseline">
-                <h2 className="text-2xl font-bold text-left">
-                  A/B Testing Infrastructure
-                </h2>
-                <h5 className="text-sm text-left">
-                  2022
-                </h5>
-                </div>
-              <p>Support for just-in-time client and NextJS server-rendered client tests and backend server tests</p>
-              <Badge>Sole Developer</Badge>
-            </div>
+            <SelectedWorkInformation
+              title="A/B Testing Infrastructure"
+              timePeriod="2022"
+              description="Support for just-in-time client and NextJS server-rendered client tests and backend server tests"
+              soleDeveloper
+            />
             <Image
               src={ABTestPic}
               alt="A comparison of two HomeLister Homepage variants, one labled A and the other B"
@@ -151,17 +112,11 @@ export default function HomeLister() {
             />
           </div>
           <div className="flex flex-col gap-4">
-            <div>
-              <div className="flex flex-row gap-2 items-baseline">
-                <h2 className="text-2xl font-bold text-left">
-                  Brokerage Management Console
-                </h2>
-                <h5 className="text-sm text-left">
-                  2021
-                </h5>
-                </div>
-              <p>Admin listing search via performant API supporting multiple concurrent filters and sort</p>
-            </div>
+            <SelectedWorkInformation
+              title="Brokerage Management Console"
+              timePeriod="2021"
+              description="Admin-only listing search via performant API supporting multiple concurrent filters and sort"
+            />
             <Image
               src={BrokerageConsolePic}
               alt="A screenshot of the admin-only brokerage console"
@@ -170,18 +125,12 @@ export default function HomeLister() {
             />
           </div>
           <div className="flex flex-col gap-4">
-            <div>
-              <div className="flex flex-row gap-2 items-baseline">
-                <h2 className="text-2xl font-bold text-left">
-                  Performance Profiling and Optimization
-                </h2>
-                <h5 className="text-sm text-left">
-                  2021
-                </h5>
-                </div>
-              <p>Lifted Lightouse performance audit scores from the mid-70s into the 90s for the HomeLister homepage. Improved Google Search Rank and increased organic inbound traffic by 30%, leading to improved conversion</p>
-              <Badge>Sole Developer</Badge>
-            </div>
+            <SelectedWorkInformation
+              title="Performance Profiling and Optimization"
+              timePeriod="2021"
+              description="Lifted Lightouse performance audit scores from the mid-70s into the 90s for the HomeLister homepage. Improved Google Search Rank and increased organic inbound traffic by 30%, leading to improved conversion"
+              soleDeveloper
+            />
             <Image
               src={LighthousePic}
               alt="Screenshot of a Chrome Lighthouse performance audit result from June 2021 for the HomeLister homepage"
@@ -189,18 +138,12 @@ export default function HomeLister() {
             />
           </div>
           <div className="flex flex-col gap-4">
-            <div>
-              <div className="flex flex-row gap-2 items-baseline">
-                <h2 className="text-2xl font-bold text-left">
-                  Agreement Signature Workflow Refactor
-                </h2>
-                <h5 className="text-sm text-left">
-                  2021
-                </h5>
-                </div>
-              <p>Backend refactor to reduce bug surface area and cut HelloSign-based real estate agreement and amendment contract generation time by a factor of 5.</p>
-              <Badge>Sole Developer</Badge>
-            </div>
+            <SelectedWorkInformation
+              title="Agreement Signature Workflow Refactor"
+              timePeriod="2021"
+              description="Backend refactor to reduce bug surface area and cut HelloSign-based real estate agreement and amendment contract generation time by a factor of 5."
+              soleDeveloper
+            />
             <Image
               src={AgreementPic}
               alt="Screenshot of a Listing Flow Agreement Signature page"
@@ -209,17 +152,11 @@ export default function HomeLister() {
             />
           </div>
           <div className="flex flex-col gap-4">
-            <div>
-              <div className="flex flex-row gap-2 items-baseline">
-                <h2 className="text-2xl font-bold text-left">
-                  HomeLister Redesign and Relaunch
-                </h2>
-                <h5 className="text-sm text-left">
-                  2019-2020
-                </h5>
-                </div>
-              <p>Ported an AngularJS monolith to a fully redesigned, responsive NextJS client</p>
-            </div>
+            <SelectedWorkInformation
+              title="HomeLister Redesign and Relaunch"
+              timePeriod="2019-2020"
+              description="Ported an AngularJS monolith to a fully redesigned, responsive NextJS client"
+            />
             <div className="flex flex-col gap-12">
               <div className="flex flex-col gap-4">
                 <div>

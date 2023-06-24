@@ -75,12 +75,10 @@ export default function RootLayout({
       return
     }
 
-
     const projectIndex = projects.findIndex(project => project.path === selectedProject)
     const navItemHeight = getNavItemHeight()
     const paddingOffset = getPaddingOffset()
     const heightOffset = (projects.length * navItemHeight) - (projectIndex * navItemHeight) - NAV_ITEM_MARGIN + NAV_ITEM_DETAILS_HEIGHT
-    // const mobileOffset = (width && width < 768) ? 110 : 0;
 
     console.log({
       projectIndex,
