@@ -7,7 +7,7 @@ export default function ProjectLayout({
 }: {
   children: React.ReactNode
 }) {
-  const baseHeaderStyles = "flex flex-col gap-4 lg:gap-10 fade opacity-100"
+  const baseHeaderStyles = "fixed flex flex-col gap-4 lg:gap-10 fade opacity-100"
   const [headerStyles, setHeaderStyles] = useState(baseHeaderStyles)
 
   const baseContentContainerStyles = "content flex flex-col gap-4 lg:gap-10 fade overflow-auto opacity-0"
@@ -48,7 +48,7 @@ export default function ProjectLayout({
       <div className={contentContainerStyles}>
         <div className="h-1" />
         {children}
-        <div className="h-1"/>
+        <div className="h-1" />
       </div>
     </div>
   )

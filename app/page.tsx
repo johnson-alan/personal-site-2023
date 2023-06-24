@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react"
 
 export default function Home() {
-  const baseStyles = "flex flex-col gap-4 lg:gap-10 fade opacity-0"
+  const baseStyles = "fixed flex flex-col gap-4 lg:gap-10 fade opacity-0"
   const [styles, setStyles] = useState(baseStyles)
 
   useEffect(() => {

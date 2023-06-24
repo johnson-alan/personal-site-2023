@@ -6,6 +6,7 @@ import './globals.css'
 import { useEffect, useRef, useState } from 'react'
 import ProjectNavItem from './ProjectNavItem'
 import projects from './projects'
+import useWindowSize from './project/useWindowSize'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,8 +16,14 @@ const NAV_ITEM_HEIGHT_DESKTOP = 60 + NAV_ITEM_MARGIN
 const NAV_ITEM_DETAILS_HEIGHT = 60
 
 const getNavItemHeight = () => {
-  const navItemHeight = window.innerWidth < 1024 ? NAV_ITEM_HEIGHT : NAV_ITEM_HEIGHT_DESKTOP
+  const navItemHeight = window.innerWidth < 768? NAV_ITEM_HEIGHT : NAV_ITEM_HEIGHT_DESKTOP
   return navItemHeight
+}
+
+const getPaddingOffset = () => {
+  if (window.innerWidth >= 1024) return 12
+  if (window.innerWidth >= 768) return 6
+  return 2
 }
 
 export default function RootLayout({
@@ -24,6 +31,8 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const { width } = useWindowSize()
+
   const pathname = usePathname()
   const [firstLoadPathname] = useState(pathname)
   const selectedProject = pathname.split('/')[2] || ''
@@ -33,8 +42,8 @@ export default function RootLayout({
   const mainStyles = "relative flex flex-col justify-between content-start p-4 md:p-24"
 
   const navStylesBase = pathname === '/'
-    ? 'nav z-10 flex flex-col absolute left-4 bottom-4 md:left-24 md:bottom-24 transition-transform duration-1000'
-    : 'nav z-10 flex flex-col absolute left-4 bottom-4 md:left-24 md:bottom-24'
+    ? 'nav fixed z-10 flex flex-col left-4 bottom-4 md:left-24 md:bottom-24 transition-transform duration-1000'
+    : 'nav fixed z-10 flex flex-col left-4 bottom-4 md:left-24 md:bottom-24'
   const [navStyles, setNavStyles] = useState(navStylesBase)
 
   const overlayStylesBase = 'z-40 absolute top-0 left-0 right-0 bottom-0 bg-backgroundColor opacity-100 fade'
@@ -69,14 +78,21 @@ export default function RootLayout({
 
     const projectIndex = projects.findIndex(project => project.path === selectedProject)
     const navItemHeight = getNavItemHeight()
-    const heightOffset = projects.length * navItemHeight - projectIndex * navItemHeight - NAV_ITEM_MARGIN + NAV_ITEM_DETAILS_HEIGHT
+    const paddingOffset = getPaddingOffset()
+    const heightOffset = (projects.length * navItemHeight) - (projectIndex * navItemHeight) - NAV_ITEM_MARGIN + NAV_ITEM_DETAILS_HEIGHT
+
+    console.log({
+      projectIndex,
+      projectLength: projects.length,
+      navItemHeight,
+      heightOffset,
+    })
 
     if (ref.current) {
-      console.log({ heightOffset })
-      ref.current.style.transform = `translateY(calc(-100vh + 12rem + ${heightOffset}px))`
+      ref.current.style.transform = `translateY(calc(-100vh + ${paddingOffset}rem + ${heightOffset}px))`
     }
 
-  }, [pathname, selectedProject, navStylesBase])
+  }, [pathname, selectedProject, navStylesBase, width])
 
   return (
     <html lang="en">
