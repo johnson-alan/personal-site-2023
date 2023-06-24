@@ -36,7 +36,7 @@ export default function ProjectLayout({
           <div className="flex w-full items-end flg:static lg:h-auto lg:w-auto lg:bg-none">
             <a
               className="pointer-events-none flex gap-2 lg:pointer-events-auto"
-              href="mailto:alan@alanjohn.me"
+              href="mailto:contact@alanjohn.me"
               target="_blank"
               rel="noopener noreferrer"
             >

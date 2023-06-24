@@ -1,22 +1,21 @@
 import Image from 'next/image'
 import Badge from '../../Badge'
 
-import HomepagePic from '../../../public/hl-homepage.png'
-import HomesForSalePic from '../../../public/hl-homes-for-sale.png'
-import GPTDescriptionsPic from '../../../public/hl-gpt-descriptions.png'
-import StorybookPic from '../../../public/hl-chromatic-storybook.png'
-import ContractEscrowPic from '../../../public/hl-contract-escrow.png'
-// import EscrowHistoryPic from '../../../public/hl-escrow-history.png'
-import ABTestPic from '../../../public/hl-ab-test.png'
-import BrokerageConsolePic from '../../../public/hl-brokerage-console.png'
-import LighthousePic from '../../../public/hl-lighthouse.png'
-import AgreementPic from '../../../public/hl-agreement.png'
-import FormBuilderPic from '../../../public/hl-form-builder.png'
-import PhotosPic from '../../../public/hl-photos.png'
-import CheckoutPic from '../../../public/hl-checkout.png'
-import DashboardPic from '../../../public/hl-dashboard.png'
-import PricingPagePic from '../../../public/hl-pricing-page.png'
-import PublicListingPic from '../../../public/hl-public-listing.png'
+import HomepagePic from '../../../public/homelister/hl-homepage.png'
+import HomesForSalePic from '../../../public/homelister/hl-homes-for-sale.png'
+import GPTDescriptionsPic from '../../../public/homelister/hl-gpt-descriptions.png'
+import StorybookPic from '../../../public/homelister/hl-chromatic-storybook.png'
+import ContractEscrowPic from '../../../public/homelister/hl-contract-escrow.png'
+import ABTestPic from '../../../public/homelister/hl-ab-test.png'
+import BrokerageConsolePic from '../../../public/homelister/hl-brokerage-console.png'
+import LighthousePic from '../../../public/homelister/hl-lighthouse.png'
+import AgreementPic from '../../../public/homelister/hl-agreement.png'
+import FormBuilderPic from '../../../public/homelister/hl-form-builder.png'
+import PhotosPic from '../../../public/homelister/hl-photos.png'
+import CheckoutPic from '../../../public/homelister/hl-checkout.png'
+import DashboardPic from '../../../public/homelister/hl-dashboard.png'
+import PricingPagePic from '../../../public/homelister/hl-pricing-page.png'
+import PublicListingPic from '../../../public/homelister/hl-public-listing.png'
 
 export default function HomeLister() {
   return (
@@ -126,7 +125,7 @@ export default function HomeLister() {
               <Badge>Sole Developer</Badge>
             </div>
             <video
-              src="/hl-product-tour.mov"
+              src="/homelister/hl-product-tour.mov"
               muted
               controls
               className='border'
