@@ -40,6 +40,11 @@ main {
 
 .nav {
   width: calc(100vw - 2rem);
+  pointer-events: none;
+}
+
+.nav a {
+  pointer-events: all;
 }
 
 @media (min-width: 768px) {
@@ -71,4 +76,7 @@ main {
   }
 }
 
+@supports (-webkit-touch-callout: none) {
+
+}
 
