@@ -95,6 +95,22 @@ export default function RootLayout({
 
   return (
     <html lang="en">
+      <meta charSet="utf-8" />
+      <meta
+        name="viewport"
+        content="width=device-width,initial-scale=1,shrink-to-fit=no, viewport-fit=cover"
+      />
+      <meta
+        name="description"
+        content="Alan Johnson is a Brooklyn-based developer building modern, React-based web applications."
+      />
+      <meta property="og:title" content="Alan Johnson - Software Engineer"/>
+      <meta property="og:type" content="website"/>
+      <meta property="og:url" content="https://alanjohn.me"/>
+      <meta property="og:image" content="/prof-round.png"/>
+      <meta property="og:description" content="Alan Johnson is a Brooklyn-based developer building modern, React-based web applications."></meta>
+      <title>Alan Johnson - Software Engineer</title>
+      <link rel="canonical" href="https://alanjohn.me" />
       <body className={inter.className}>
       <main className={mainStyles}>
         {firstLoadPathname.includes('project') && <div className={overlayStyles} ref={overlayRef} />}
