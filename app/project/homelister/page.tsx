@@ -10,6 +10,13 @@ import ContractEscrowPic from '../../../public/hl-contract-escrow.png'
 import ABTestPic from '../../../public/hl-ab-test.png'
 import BrokerageConsolePic from '../../../public/hl-brokerage-console.png'
 import LighthousePic from '../../../public/hl-lighthouse.png'
+import AgreementPic from '../../../public/hl-agreement.png'
+import FormBuilderPic from '../../../public/hl-form-builder.png'
+import PhotosPic from '../../../public/hl-photos.png'
+import CheckoutPic from '../../../public/hl-checkout.png'
+import DashboardPic from '../../../public/hl-dashboard.png'
+import PricingPagePic from '../../../public/hl-pricing-page.png'
+import PublicListingPic from '../../../public/hl-public-listing.png'
 
 export default function HomeLister() {
   return (
@@ -195,6 +202,12 @@ export default function HomeLister() {
               <p>Backend refactor to reduce bug surface area and cut HelloSign-based real estate agreement and amendment contract generation time by a factor of 5.</p>
               <Badge>Sole Developer</Badge>
             </div>
+            <Image
+              src={AgreementPic}
+              alt="Screenshot of a Listing Flow Agreement Signature page"
+              placeholder="blur"
+              className='border'
+            />
           </div>
           <div className="flex flex-col gap-4">
             <div>
@@ -208,12 +221,80 @@ export default function HomeLister() {
                 </div>
               <p>Ported an AngularJS monolith to a fully redesigned, responsive NextJS client</p>
             </div>
-            <h3 className="text-1xl font-bold text-left">Form Builder</h3>
-            <h3 className="text-1xl font-bold text-left">Photo Uploader</h3>
-            <h3 className="text-1xl font-bold text-left">Checkout</h3>
-            <h3 className="text-1xl font-bold text-left">Dashboard (Showing and Contract Utilities)</h3>
-            <h3 className="text-1xl font-bold text-left">Various Landing Pages</h3>
-            <h3 className="text-1xl font-bold text-left">Public Listing Page</h3>
+            <div className="flex flex-col gap-12">
+              <div className="flex flex-col gap-4">
+                <div>
+                  <h3 className="text-1xl font-bold text-left">Form Builder</h3>
+                  <p>Listing Flow utility facilitating conditional, per-MLS page, section, and input rendering</p>
+                </div>
+                <Image
+                  src={FormBuilderPic}
+                  alt="Screenshot of a Listing Flow page with multiple input types generated via the Form Builder"
+                  placeholder="blur"
+                  className='border'
+                />
+              </div>
+              <div className="flex flex-col gap-4">
+                <div>
+                  <h3 className="text-1xl font-bold text-left">Photo Uploader</h3>
+                  <p>Drag-and-drop photo uploader with automatic photo optimization</p>
+                </div>
+                <Image
+                  src={PhotosPic}
+                  alt="Screenshot of the Listing Flow Photos page with a drag-and-drop photo uploader and grid of uploaded photos"
+                  placeholder="blur"
+                  className='border'
+                />
+              </div>
+              <div className="flex flex-col gap-4">
+                <div>
+                  <h3 className="text-1xl font-bold text-left">Checkout</h3>
+                  <p>Stripe-based Checkout Flow supporting simultaneous purchase of services across multiple listings</p>
+                </div>
+                <Image
+                  src={CheckoutPic}
+                  alt="Screenshot of a Listing Flow page with multiple input types generated via the Form Builder"
+                  placeholder="blur"
+                  className='border'
+                />
+              </div>
+              <div className="flex flex-col gap-4">
+                <div>
+                  <h3 className="text-1xl font-bold text-left">My Listings Dashboard</h3>
+                  <div>Post-listing experience for sellers to manage the sale of their home</div>
+                </div>
+                <Image
+                  src={DashboardPic}
+                  alt="Screenshot of the My Listings Dashboard"
+                  placeholder="blur"
+                  className='border'
+                />
+              </div>
+              <div className="flex flex-col gap-4">
+                <div>
+                  <h3 className="text-1xl font-bold text-left">Various Landing Pages</h3>
+                  <div>Responsive general-purpose landing pages and for various marketing campaigns</div>
+                </div>
+                <Image
+                  src={PricingPagePic}
+                  alt="Screenshot of the My Listings Dashboard"
+                  placeholder="blur"
+                  className='border'
+                />
+              </div>
+              <div className="flex flex-col gap-4">
+                <div>
+                  <h3 className="text-1xl font-bold text-left">Public Listing Page</h3>
+                  <div>Public, search-indexed listing page for sellers to share with potential buyers</div>
+                </div>
+                <Image
+                  src={PublicListingPic}
+                  alt="Screenshot of the My Listings Dashboard"
+                  placeholder="blur"
+                  className='border'
+                />
+              </div>
+            </div>
           </div>
         </div>
     </div>

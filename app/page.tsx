@@ -16,7 +16,7 @@ export default function Home() {
     <div className={styles}>
       <div>
         <h1 className="text-4xl font-bold text-left">
-          Allen Johnson is a Brooklyn-based Software Engineer
+          Alan Johnson is a Brooklyn-based Software Engineer
         </h1>
       </div>
 
@@ -24,7 +24,7 @@ export default function Home() {
         <div className="flex w-full items-end flg:static lg:h-auto lg:w-auto lg:bg-none">
           <a
             className="pointer-events-none flex gap-2 lg:pointer-events-auto"
-            href="mailto:allendotjohnson@gmail.com"
+            href="mailto:alan@alanjohn.me"
             target="_blank"
             rel="noopener noreferrer"
           >
