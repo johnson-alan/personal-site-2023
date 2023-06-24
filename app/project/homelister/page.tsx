@@ -92,7 +92,7 @@ export default function HomeLister() {
               soleDeveloper
             />
             <video
-              src="/homelister/hl-product-tour.mov"
+              src="/homelister/hl-product-tour.mov#t=0.001"
               muted
               controls
               className='border'
