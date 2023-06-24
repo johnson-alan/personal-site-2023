@@ -61,7 +61,7 @@ main {
     padding-right: calc(100vw - 6rem - 1100px);
   }
 
-  .content div {
+  .content > div {
     max-width: 1100px;
     margin-right: 6rem;
   }
