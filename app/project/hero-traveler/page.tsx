@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Badge from '../../Badge'
 
-import HomepagePic from '../../../public/homelister/hl-homepage.png'
+import HomepagePic from '../../../public/hero-traveler/ht-homepage-group.png'
 import HomesForSalePic from '../../../public/homelister/hl-homes-for-sale.png'
 export default function HeroTraveler() {
   return (

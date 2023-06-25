@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Badge from '../../Badge'
 
-import HomepagePic from '../../../public/homelister/hl-homepage.png'
+import HomepagePic from '../../../public/advance-auto-parts/aap-homepage.png'
 import HomesForSalePic from '../../../public/homelister/hl-homes-for-sale.png'
 export default function AdvanceAutoParts() {
   return (
@@ -9,6 +9,7 @@ export default function AdvanceAutoParts() {
       <Image
         src={HomepagePic}
         alt="A screenshot of the homepage of the HomeLister website"
+        width={800}
       />
       <p className="text-1xl text-left">
         HomeLister is a real estate technology platform that enables homesellers to list their homes on the Multiple Listing Service (MLS) and other real estate websites without paying a traditional listing commission to brokers. It provides a suite of tools to help homesellers manage their listings, market their home, and communicate directly with buyers and buyer agents, from scheduling their first open houses all the way through the closing process. By eliminating the seller agent&apos;s listing commission in favor of low flat fees, HomeLister saves homesellers an average of 30% of their equity at time of sale.

@@ -112,7 +112,9 @@ export default function RootLayout({
         <meta property="og:description" content="Alan Johnson is a Brooklyn-based developer building modern, React-based web applications."></meta>
         <title>Alan Johnson - Software Engineer</title>
         <link rel="canonical" href="https://alanjohn.me" />
-        <link rel="icon" href="/icon" type="image/png" sizes="32x32" />
+        <link rel="icon" href="/icon?<generated>" type="image/png" sizes="32x32" />
+        <link rel="apple-touch-icon" href="/apple-icon?<generated>" type="image/<generated>" sizes="<generated>" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
       <body className={inter.className}>
       <main className={mainStyles}>
