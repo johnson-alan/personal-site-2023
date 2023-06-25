@@ -31,7 +31,6 @@ export default function HeroTraveler() {
           <Image
             src={PostcardPic}
             alt="Two screenshots of the Hero Traveler postcard feature, one of creation and the other of the feed view displaying published postcards"
-            // className='border'
           />
         </div>
         <div className="flex flex-col gap-4">

@@ -102,7 +102,7 @@ export default function HomeLister() {
             <SelectedWorkInformation
               title="A/B Testing Infrastructure"
               timePeriod="2022"
-              description="Support for just-in-time client and NextJS server-rendered client tests and backend server tests"
+              description="Support for just-in-time client and Next.js server-rendered client tests and backend server tests"
               soleDeveloper
             />
             <Image
@@ -155,7 +155,7 @@ export default function HomeLister() {
             <SelectedWorkInformation
               title="HomeLister Redesign and Relaunch"
               timePeriod="2019-2020"
-              description="Ported an AngularJS monolith to a fully redesigned, responsive NextJS client"
+              description="Ported an AngularJS monolith to a fully redesigned, responsive Next.js client"
             />
             <div className="flex flex-col gap-12">
               <div className="flex flex-col gap-4">
