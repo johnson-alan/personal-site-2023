@@ -21,7 +21,7 @@ const projects = [
     path: 'buildstream',
     startYear: 2019,
     endYear: 2019,
-    role: 'Sole Developer',
+    role: 'Sole Frontend Developer',
   },
   {
     name: 'Advance Auto Parts',
