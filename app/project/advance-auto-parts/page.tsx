@@ -12,30 +12,15 @@ export default function AdvanceAutoParts() {
         width={800}
       />
       <p className="text-1xl text-left">
-        HomeLister is a real estate technology platform that enables homesellers to list their homes on the Multiple Listing Service (MLS) and other real estate websites without paying a traditional listing commission to brokers. It provides a suite of tools to help homesellers manage their listings, market their home, and communicate directly with buyers and buyer agents, from scheduling their first open houses all the way through the closing process. By eliminating the seller agent&apos;s listing commission in favor of low flat fees, HomeLister saves homesellers an average of 30% of their equity at time of sale.
+        Advance Auto Parts commissioned Welcome Agency to build a product selection iPad app for their Store of the Future pilot. The app was designed to be used by customers and store associates to find the right part for their particular vehicle. The app was built using React Native and Expo, and was deployed to iPads in stores across the country via Microsoft Azure Mobile Device Management.
       </p>
-      <h1 className="text-3xl font-bold text-left">Selected Work</h1>
-      <div className="flex flex-col gap-16">
-        <div className="flex flex-col gap-4">
-          <div>
-            <div className="flex flex-row gap-2 items-baseline">
-              <h2 className="text-2xl font-bold text-left">
-                Homes For Sale
-              </h2>
-              <h5 className="text-sm text-left">
-                2023
-              </h5>
-            </div>
-            <p>Map-based search view for HomeLister listings</p>
-            <Badge>Sole Developer</Badge>
-          </div>
-          <Image
-            src={HomesForSalePic}
-            alt="A screenshot of the map-based Homes for Sale page of the HomeLister website"
-            className='border'
-          />
-        </div>
-      </div>
+      <h1 className="text-3xl font-bold text-left">Demo</h1>
+      <video
+        src="/advance-auto-parts/aap-selection.mp4#t=0.001"
+        muted
+        controls
+        className='border'
+      />
     </div>
   )
 }

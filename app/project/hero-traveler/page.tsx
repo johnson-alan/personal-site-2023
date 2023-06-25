@@ -1,8 +1,15 @@
 import Image from 'next/image'
-import Badge from '../../Badge'
+
+import SelectedWorkInformation from '../SelectedProjectInformation'
 
 import HomepagePic from '../../../public/hero-traveler/ht-homepage-group.png'
-import HomesForSalePic from '../../../public/homelister/hl-homes-for-sale.png'
+import PostcardPic from '../../../public/hero-traveler/ht-postcard.png'
+import StoryEditorPic from '../../../public/hero-traveler/ht-story-editor.png'
+import StoryViewPic from '../../../public/hero-traveler/ht-story-view.png'
+import NotificationsPic from '../../../public/hero-traveler/ht-notifications.png'
+import SearchPic from '../../../public/hero-traveler/ht-search.png'
+import SearchResultsPic from '../../../public/hero-traveler/ht-search-results.png'
+
 export default function HeroTraveler() {
   return (
     <div className="flex flex-col gap-6">
@@ -11,26 +18,73 @@ export default function HeroTraveler() {
         alt="A screenshot of the homepage of the HomeLister website"
       />
       <p className="text-1xl text-left">
-        HomeLister is a real estate technology platform that enables homesellers to list their homes on the Multiple Listing Service (MLS) and other real estate websites without paying a traditional listing commission to brokers. It provides a suite of tools to help homesellers manage their listings, market their home, and communicate directly with buyers and buyer agents, from scheduling their first open houses all the way through the closing process. By eliminating the seller agent&apos;s listing commission in favor of low flat fees, HomeLister saves homesellers an average of 30% of their equity at time of sale.
+        HeroTraveler is a social media platform for travel enthusiasts that allows users to create, share, plan, and book travel experiences curated by their peers and travel experts.
       </p>
       <h1 className="text-3xl font-bold text-left">Selected Work</h1>
-      <div className="flex flex-col gap-16">
+      <div className="flex flex-col gap-10 md:gap-16">
         <div className="flex flex-col gap-4">
-          <div>
-            <div className="flex flex-row gap-2 items-baseline">
-              <h2 className="text-2xl font-bold text-left">
-                Homes For Sale
-              </h2>
-              <h5 className="text-sm text-left">
-                2023
-              </h5>
-            </div>
-            <p>Map-based search view for HomeLister listings</p>
-            <Badge>Sole Developer</Badge>
-          </div>
+          <SelectedWorkInformation
+            title="Postcards"
+            description="Instagram Story-style feature allowing users to create a digital &quot;postcard&quot; from their photos."
+            timePeriod='2019'
+          />
           <Image
-            src={HomesForSalePic}
-            alt="A screenshot of the map-based Homes for Sale page of the HomeLister website"
+            src={PostcardPic}
+            alt="Two screenshots of the Hero Traveler postcard feature, one of creation and the other of the feed view displaying published postcards"
+            // className='border'
+          />
+        </div>
+        <div className="flex flex-col gap-4">
+          <SelectedWorkInformation
+            title="Improved Story Editor"
+            description="Rich text editor for creating stories with photos, videos, multiple text types, and inline styles."
+            timePeriod='2018-2019'
+            soleDeveloper
+          />
+          <Image
+            src={StoryEditorPic}
+            alt="A screenshot of the Hero Traveler story editor editing a story about a trip to Morocco"
+            className='border'
+          />
+        </div>
+        <div className="flex flex-col gap-4">
+          <SelectedWorkInformation
+            title="Story View Improvements"
+            description="Improved story viewing experience with a new floating sidebar design"
+            timePeriod='2018-2019'
+          />
+          <Image
+            src={StoryViewPic}
+            alt="A screenshot of the Hero Traveler story view with a floating sidebar"
+            className='border'
+          />
+        </div>
+        <div className="flex flex-col gap-4">
+          <SelectedWorkInformation
+            title="Notifications"
+            description="SNS-based notifications system for user interactions with custom in-app fallback"
+            timePeriod='2018'
+          />
+          <Image
+            src={NotificationsPic}
+            alt="Twoscreenshot of the Hero Traveler notifications system, one of the notifications feed and the other of the a  custom in-app notification appearing above a story"
+          />
+        </div>
+        <div className="flex flex-col gap-4">
+          <SelectedWorkInformation
+            title="Location Search"
+            description="Fuzzy location search with realtime results via Google Places API and Algolia"
+            timePeriod='2018'
+            soleDeveloper
+          />
+          <Image
+            src={SearchPic}
+            alt="A screenshot of the Hero Traveler location search feature"
+            className='border'
+          />
+          <Image
+            src={SearchResultsPic}
+            alt="A screenshot of the Hero Traveler location search feature displaying search results"
             className='border'
           />
         </div>

@@ -18,7 +18,7 @@ export default function BuildStream() {
         BuildStream is a UK-focused construction site worker recruitment platform. Prior to a major pivot, it began as an IoT platform that helped construction companies manage their heavy equipment fleets using proprietary sensor technology attached to onsite equipment that could monitor the equipment&apos;s location, usage, and maintenance needs, displaying site data in real time on a web-based console that also provided analytics and reporting tools.
       </p>
       <h1 className="text-3xl font-bold text-left">Selected Work</h1>
-      <div className="flex flex-col gap-16">
+      <div className="flex flex-col gap-10 md:gap-16">
         <div className="flex flex-col gap-4">
           <div>
             <div className="flex flex-row gap-2 items-baseline">
