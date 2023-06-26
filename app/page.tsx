@@ -6,6 +6,7 @@ export default function Home() {
   const baseStyles = "name fixed flex flex-col gap-4 lg:gap-10 fade opacity-0"
   const [styles, setStyles] = useState(baseStyles)
 
+  // fade in the name on page load
   useEffect(() => {
     setTimeout(() => {
       setStyles(baseStyles.replace('opacity-0', 'opacity-100'))

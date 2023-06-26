@@ -1,5 +1,6 @@
 import Image from 'next/image'
-import Badge from '../../Badge'
+
+import SelectedWorkInformation from '../SelectedProjectInformation'
 
 import HomepagePic from '../../../public/homelister/hl-homepage.png'
 import HomesForSalePic from '../../../public/homelister/hl-homes-for-sale.png'
@@ -16,7 +17,6 @@ import CheckoutPic from '../../../public/homelister/hl-checkout.png'
 import DashboardPic from '../../../public/homelister/hl-dashboard.png'
 import PricingPagePic from '../../../public/homelister/hl-pricing-page.png'
 import PublicListingPic from '../../../public/homelister/hl-public-listing.png'
-import SelectedWorkInformation from '../SelectedProjectInformation'
 
 export default function HomeLister() {
   return (

@@ -1,11 +1,11 @@
 import Image from 'next/image'
-import Badge from '../../Badge'
+
+import SelectedWorkInformation from '../SelectedProjectInformation'
 
 import HomepagePic from '../../../public/buildstream/bs-homepage.png'
 import LiveMapPic from '../../../public/buildstream/bs-live-map.png'
 import DashboardPic from '../../../public/buildstream/bs-dashboard.png'
 import AnalyticsPic from '../../../public/buildstream/bs-analytics.png'
-
 
 export default function BuildStream() {
   return (
@@ -21,15 +21,12 @@ export default function BuildStream() {
       <h1 className="text-3xl font-bold text-left">Selected Work</h1>
       <div className="flex flex-col gap-10 md:gap-16">
         <div className="flex flex-col gap-4">
-          <div>
-            <div className="flex flex-row gap-2 items-baseline">
-              <h2 className="text-2xl font-bold text-left">
-                Live Heavy Equipment Status Map
-              </h2>
-            </div>
-            <p>Map-based view displaying the location and status of heavy equipment across multiple active construction sites</p>
-            <Badge>Sole Developer</Badge>
-          </div>
+          <SelectedWorkInformation
+            title="Live Heavy Equipment Status Map"
+            description="Map-based view displaying the location and status of heavy equipment across multiple active construction sites"
+            timePeriod='2019'
+            soleDeveloper
+          />
           <Image
             src={LiveMapPic}
             alt="A screenshot of the Live Map view of the Buildstream website"
@@ -38,15 +35,12 @@ export default function BuildStream() {
           />
         </div>
         <div className="flex flex-col gap-4">
-          <div>
-            <div className="flex flex-row gap-2 items-baseline">
-              <h2 className="text-2xl font-bold text-left">
-                Analytics Dashboard
-              </h2>
-            </div>
-            <p>Configurable, responsive dashboard widgets displaying key metrics and analytics</p>
-            <Badge>Sole Developer</Badge>
-          </div>
+          <SelectedWorkInformation
+            title="Analytics Dashboard"
+            description="Configurable, responsive dashboard widgets displaying key metrics and analytics"
+            timePeriod='2019'
+            soleDeveloper
+          />
           <Image
             src={DashboardPic}
             alt="A screenshot of the Analytics Dashboard view of the Buildstream website"
@@ -55,15 +49,12 @@ export default function BuildStream() {
           />
         </div>
         <div className="flex flex-col gap-4">
-          <div>
-            <div className="flex flex-row gap-2 items-baseline">
-              <h2 className="text-2xl font-bold text-left">
-                Graphs and Charts
-              </h2>
-            </div>
-            <p>D3.js-based SVG graphs and charts displaying key metrics and analytics</p>
-            <Badge>Sole Developer</Badge>
-          </div>
+          <SelectedWorkInformation
+            title="Graphs and Charts"
+            description="D3.js-based SVG graphs and charts displaying key metrics and analytics"
+            timePeriod='2019'
+            soleDeveloper
+          />
           <Image
             src={AnalyticsPic}
             alt="A screenshot of the additional graphs in the Analytics Dashboard view of the Buildstream website"

@@ -7,6 +7,7 @@ import { useEffect, useRef, useState } from 'react'
 import ProjectNavItem from './ProjectNavItem'
 import projects from './projects'
 import useWindowSize from './project/useWindowSize'
+import Head from 'next/head'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -34,8 +35,8 @@ export default function RootLayout({
   const { width } = useWindowSize()
 
   const pathname = usePathname()
-  const [firstLoadPathname] = useState(pathname)
-  const selectedProject = pathname.split('/')[2] || ''
+  const [firstLoadPathname] = useState(pathname || '/')
+  const selectedProject = pathname?.split('/')[2] || ''
 
   const ref = useRef<HTMLHeadingElement>(null)
 
@@ -50,6 +51,8 @@ export default function RootLayout({
   const [overlayStyles, setOverlayStyles] = useState(overlayStylesBase)
   const overlayRef = useRef<HTMLDivElement>(null)
 
+  // for project page accessed directly via URL, start with an overlay to hide the default
+  // transition of the nav items up to the top of the page
   useEffect(() => {
     setTimeout(() => {
       setOverlayStyles(overlayStylesBase.replace('opacity-100', 'opacity-0'))
@@ -63,6 +66,8 @@ export default function RootLayout({
     }, 500)
   }, [])
 
+  // when the pathname changes from root to a project page, update the nav styles so the nav
+  // element transitions to the top of the page
   useEffect(() => {
     if (pathname === '/') {
       setNavStyles(navStylesBase)
@@ -80,13 +85,6 @@ export default function RootLayout({
     const paddingOffset = getPaddingOffset()
     const heightOffset = (projects.length * navItemHeight) - (projectIndex * navItemHeight) - NAV_ITEM_MARGIN + NAV_ITEM_DETAILS_HEIGHT
 
-    console.log({
-      projectIndex,
-      projectLength: projects.length,
-      navItemHeight,
-      heightOffset,
-    })
-
     if (ref.current) {
       ref.current.style.transform = `translateY(calc(-100dvh + ${paddingOffset}rem + ${heightOffset}px))`
     }
@@ -96,6 +94,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <title>Alan Johnson - Software Engineer</title>
+
         <meta charSet="utf-8" />
         <meta
           name="viewport"
@@ -105,12 +105,21 @@ export default function RootLayout({
           name="description"
           content="Alan Johnson is a Brooklyn-based developer building modern, React-based web applications."
         />
+
         <meta property="og:title" content="Alan Johnson - Software Engineer"/>
         <meta property="og:type" content="website"/>
         <meta property="og:url" content="https://alanjohn.me"/>
-        <meta property="og:image" content="/prof-round.png"/>
         <meta property="og:description" content="Alan Johnson is a Brooklyn-based developer building modern, React-based web applications."></meta>
-        <title>Alan Johnson - Software Engineer</title>
+
+        <meta
+          name="og:image"
+          content={
+            // Because OG images must have a absolute URL, we use the
+            // `VERCEL_URL` environment variable to get the deployment’s URL.
+            `${process.env.VERCEL_URL ? 'https://' + process.env.VERCEL_URL : ''}/api/og`
+          }
+        />
+
         <link rel="canonical" href="https://alanjohn.me" />
         <link rel="icon" href="/icon?<generated>" type="image/png" sizes="32x32" />
         <link rel="apple-touch-icon" href="/apple-icon?<generated>" type="image/<generated>" sizes="<generated>" />

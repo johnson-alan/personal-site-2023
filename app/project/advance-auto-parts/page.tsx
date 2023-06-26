@@ -1,8 +1,7 @@
 import Image from 'next/image'
-import Badge from '../../Badge'
 
 import HomepagePic from '../../../public/advance-auto-parts/aap-homepage.png'
-import HomesForSalePic from '../../../public/homelister/hl-homes-for-sale.png'
+
 export default function AdvanceAutoParts() {
   return (
     <div className="flex flex-col gap-6">
