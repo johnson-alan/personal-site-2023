@@ -116,7 +116,7 @@ export default function RootLayout({
           content={
             // Because OG images must have a absolute URL, we use the
             // `VERCEL_URL` environment variable to get the deployment’s URL.
-            `${process.env.VERCEL_URL ? 'https://' + process.env.VERCEL_URL : ''}/api/static`
+            `${process.env.VERCEL_URL ? 'https://' + process.env.VERCEL_URL : ''}/api/og`
           }
         />
 
