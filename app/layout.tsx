@@ -7,6 +7,7 @@ import { useEffect, useRef, useState } from 'react'
 import ProjectNavItem from './ProjectNavItem'
 import projects from './projects'
 import useWindowSize from './project/useWindowSize'
+import Head from 'next/head'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -90,9 +91,11 @@ export default function RootLayout({
 
   }, [pathname, selectedProject, navStylesBase, width])
 
+  console.log(`${process.env.VERCEL_URL ? 'https://' + process.env.VERCEL_URL : 'localhost:3000'}/api/og`)
+
   return (
     <html lang="en">
-      <head>
+      <Head>
         <title>Alan Johnson - Software Engineer</title>
 
         <meta charSet="utf-8" />
@@ -123,7 +126,7 @@ export default function RootLayout({
         <link rel="icon" href="/icon?<generated>" type="image/png" sizes="32x32" />
         <link rel="apple-touch-icon" href="/apple-icon?<generated>" type="image/<generated>" sizes="<generated>" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
-      </head>
+      </Head>
       <body className={inter.className}>
       <main className={mainStyles}>
         {firstLoadPathname.includes('project') && <div className={overlayStyles} ref={overlayRef} />}
