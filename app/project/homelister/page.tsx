@@ -24,6 +24,7 @@ export default function HomeLister() {
        <Image
           src={HomepagePic}
           alt="A screenshot of the homepage of the HomeLister website"
+          priority
         />
         <p className="text-1xl text-left">
           HomeLister is a real estate technology platform that enables homesellers to list their homes on their Multiple Listing Service (MLS) and other sites, bypassing traditional broker fees. It provides a suite of tools to help homesellers manage their listings, market their home, and close the sale. By replacing the traditional seller agent&apos;s commission with low flat fees, HomeLister saves homesellers an average of 30% of their equity at time of sale.
@@ -41,6 +42,8 @@ export default function HomeLister() {
               src={HomesForSalePic}
               alt="A screenshot of the map-based Homes for Sale page of the HomeLister website"
               className='border'
+              placeholder="blur"
+              priority
             />
           </div>
           <div className="flex flex-col gap-4">

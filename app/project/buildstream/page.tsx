@@ -13,6 +13,7 @@ export default function BuildStream() {
       <Image
         src={HomepagePic}
         alt="A screenshot of the homepage of the HomeLister website"
+        priority
       />
       <p className="text-1xl text-left">
         BuildStream is a UK-focused construction site worker recruitment platform. Prior to a major pivot, it began as an IoT platform that helped construction companies manage their heavy equipment fleets using proprietary sensor technology attached to onsite equipment that could monitor the equipment&apos;s location, usage, and maintenance needs, displaying site data in real time on a web-based console that also provided analytics and reporting tools.
@@ -33,6 +34,7 @@ export default function BuildStream() {
             src={LiveMapPic}
             alt="A screenshot of the Live Map view of the Buildstream website"
             className='border'
+            placeholder="blur"
           />
         </div>
         <div className="flex flex-col gap-4">
@@ -49,6 +51,7 @@ export default function BuildStream() {
             src={DashboardPic}
             alt="A screenshot of the Analytics Dashboard view of the Buildstream website"
             className='border'
+            placeholder="blur"
           />
         </div>
         <div className="flex flex-col gap-4">
@@ -65,6 +68,7 @@ export default function BuildStream() {
             src={AnalyticsPic}
             alt="A screenshot of the additional graphs in the Analytics Dashboard view of the Buildstream website"
             className='border'
+            placeholder="blur"
           />
         </div>
       </div>

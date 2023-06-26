@@ -10,6 +10,7 @@ export default function AdvanceAutoParts() {
         src={HomepagePic}
         alt="A screenshot of the homepage of the HomeLister website"
         width={800}
+        priority
       />
       <p className="text-1xl text-left">
         Advance Auto Parts commissioned Welcome Agency to build a product selection iPad app for their Store of the Future pilot. The app was designed to be used by customers and store associates to find the right part for their particular vehicle. The app was built using React Native and was deployed to iPads in stores across the country via Microsoft Azure Mobile Device Management.

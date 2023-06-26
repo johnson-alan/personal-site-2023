@@ -16,6 +16,7 @@ export default function HeroTraveler() {
       <Image
         src={HomepagePic}
         alt="A screenshot of the homepage of the HomeLister website"
+        priority
       />
       <p className="text-1xl text-left">
         HeroTraveler is a social media platform for travel enthusiasts that allows users to create, share, plan, and book travel experiences curated by their peers and travel experts. HeroTraveler is built on a shared codebase for iOS and web using React and React Native.
@@ -31,6 +32,8 @@ export default function HeroTraveler() {
           <Image
             src={PostcardPic}
             alt="Two screenshots of the Hero Traveler postcard feature, one of creation and the other of the feed view displaying published postcards"
+            placeholder="blur"
+            priority
           />
         </div>
         <div className="flex flex-col gap-4">
@@ -44,6 +47,7 @@ export default function HeroTraveler() {
             src={StoryEditorPic}
             alt="A screenshot of the Hero Traveler story editor editing a story about a trip to Morocco"
             className='border'
+            placeholder="blur"
           />
         </div>
         <div className="flex flex-col gap-4">
@@ -56,6 +60,7 @@ export default function HeroTraveler() {
             src={StoryViewPic}
             alt="A screenshot of the Hero Traveler story view with a floating sidebar"
             className='border'
+            placeholder="blur"
           />
         </div>
         <div className="flex flex-col gap-4">
@@ -67,6 +72,7 @@ export default function HeroTraveler() {
           <Image
             src={NotificationsPic}
             alt="Twoscreenshot of the Hero Traveler notifications system, one of the notifications feed and the other of the a  custom in-app notification appearing above a story"
+            placeholder="blur"
           />
         </div>
         <div className="flex flex-col gap-4">
@@ -80,11 +86,13 @@ export default function HeroTraveler() {
             src={SearchPic}
             alt="A screenshot of the Hero Traveler location search feature"
             className='border'
+            placeholder="blur"
           />
           <Image
             src={SearchResultsPic}
             alt="A screenshot of the Hero Traveler location search feature displaying search results"
             className='border'
+            placeholder="blur"
           />
         </div>
       </div>
