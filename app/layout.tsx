@@ -91,8 +91,6 @@ export default function RootLayout({
 
   }, [pathname, selectedProject, navStylesBase, width])
 
-  console.log(`${process.env.VERCEL_URL ? 'https://' + process.env.VERCEL_URL : 'localhost:3000'}/api/og`)
-
   return (
     <html lang="en">
       <Head>

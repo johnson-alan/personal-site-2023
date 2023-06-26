@@ -14,14 +14,15 @@ const ProjectNavItem: FunctionComponent<NavItemProps> = ({ project }) => {
   const navItemRef = useRef<HTMLDivElement>(null)
   const subtitleRef = useRef<HTMLDivElement>(null)
 
-  const pathname = usePathname()
+  const pathname = usePathname() ?? ''
+  const pathPart = pathname?.split('/')[2] || ''
 
   const href = pathname === '/' ? `/project/${path}` : '/'
 
   const navItemStyles = "w-full text-4xl font-bold text-left lg:text-6xl hover:text-blue-700 mt-[10px] fade bg-backgroundColor"
 
   const onProjectPage = pathname !== '/'
-  const highligted = onProjectPage && pathname.split('/')[2] === path
+  const highligted = onProjectPage && pathPart === path
   const hidden = onProjectPage && pathname !== `/project/${path}`
 
   const formattedDates = startYear === endYear ? startYear : `${startYear} - ${endYear}`
