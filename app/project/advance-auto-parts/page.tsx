@@ -12,7 +12,7 @@ export default function AdvanceAutoParts() {
         width={800}
       />
       <p className="text-1xl text-left">
-        Advance Auto Parts commissioned Welcome Agency to build a product selection iPad app for their Store of the Future pilot. The app was designed to be used by customers and store associates to find the right part for their particular vehicle. The app was built using React Native and Expo, and was deployed to iPads in stores across the country via Microsoft Azure Mobile Device Management.
+        Advance Auto Parts commissioned Welcome Agency to build a product selection iPad app for their Store of the Future pilot. The app was designed to be used by customers and store associates to find the right part for their particular vehicle. The app was built using React Native and was deployed to iPads in stores across the country via Microsoft Azure Mobile Device Management.
       </p>
       <h1 className="text-3xl font-bold text-left">Demo</h1>
       <video

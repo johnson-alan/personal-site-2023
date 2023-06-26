@@ -209,7 +209,7 @@ export default function HomeLister() {
               <div className="flex flex-col gap-4">
                 <div>
                   <h3 className="text-1xl font-bold text-left">Various Landing Pages</h3>
-                  <div>Responsive general-purpose landing pages and for various marketing campaigns</div>
+                  <div>Responsive general-purpose and marketing campaign landing pages</div>
                 </div>
                 <Image
                   src={PricingPagePic}

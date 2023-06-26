@@ -18,14 +18,14 @@ export default function HeroTraveler() {
         alt="A screenshot of the homepage of the HomeLister website"
       />
       <p className="text-1xl text-left">
-        HeroTraveler is a social media platform for travel enthusiasts that allows users to create, share, plan, and book travel experiences curated by their peers and travel experts.
+        HeroTraveler is a social media platform for travel enthusiasts that allows users to create, share, plan, and book travel experiences curated by their peers and travel experts. HeroTraveler is built on a shared codebase for iOS and web using React and React Native.
       </p>
       <h1 className="text-3xl font-bold text-left">Selected Work</h1>
       <div className="flex flex-col gap-10 md:gap-16">
         <div className="flex flex-col gap-4">
           <SelectedWorkInformation
             title="Postcards"
-            description="Instagram Story-style feature allowing users to create a digital &quot;postcard&quot; from their photos."
+            description="Instagram Stories-style feature allowing users to create a digital &quot;postcard&quot; from their photos."
             timePeriod='2019'
           />
           <Image
