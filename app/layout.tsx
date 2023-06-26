@@ -93,7 +93,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <Head>
+      <head>
         <title>Alan Johnson - Software Engineer</title>
 
         <meta charSet="utf-8" />
@@ -124,7 +124,7 @@ export default function RootLayout({
         <link rel="icon" href="/icon?<generated>" type="image/png" sizes="32x32" />
         <link rel="apple-touch-icon" href="/apple-icon?<generated>" type="image/<generated>" sizes="<generated>" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
-      </Head>
+      </head>
       <body className={inter.className}>
       <main className={mainStyles}>
         {firstLoadPathname.includes('project') && <div className={overlayStyles} ref={overlayRef} />}
