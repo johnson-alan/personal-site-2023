@@ -60,7 +60,7 @@ const ProjectNavItem: FunctionComponent<NavItemProps> = ({ project }) => {
         </h2>
         {highligted && (
           <div className='relative fade-in-all opacity-0 h-0' ref={subtitleRef}>
-            <h3 className='text-3xl font-bold bg-backgroundColor'>
+            <h3 className='text-2xl lg:text-3xl font-bold bg-backgroundColor'>
               {formattedDates}
             </h3>
             <h3 className='text-1xl bg-backgroundColor'>
