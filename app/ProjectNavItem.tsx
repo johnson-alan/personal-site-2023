@@ -28,15 +28,6 @@ const ProjectNavItem: FunctionComponent<NavItemProps> = ({ project }) => {
   const formattedDates = startYear === endYear ? startYear : `${startYear} - ${endYear}`
 
   useEffect(() => {
-    setTimeout(() => {
-      if (navItemRef.current) {
-        navItemRef.current.classList.remove('opacity-0')
-        navItemRef.current.classList.add('opacity-100')
-      }
-    })
-  }, [])
-
-  useEffect(() => {
     if (highligted) {
       setTimeout(() => {
         const subtitle = subtitleRef.current
@@ -60,7 +51,7 @@ const ProjectNavItem: FunctionComponent<NavItemProps> = ({ project }) => {
   }, [highligted])
 
   return (
-    <div className ='relative opacity-0 fade' ref={navItemRef}>
+    <div className={`${!hidden ? 'active-item' : ''} relative opacity-100 fade`} ref={navItemRef}>
       <Link href={hidden ? pathname : href}>
         <h2
           className={`${navItemStyles} ${hidden ? 'opacity-0 cursor-default' : 'opacity-100'}`}

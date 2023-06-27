@@ -53,7 +53,7 @@ main {
   pointer-events: none;
 }
 
-.nav a {
+.nav .active-item a {
   pointer-events: all;
 }
 
