@@ -19,7 +19,7 @@ export default function HeroTraveler() {
         priority
       />
       <p className="text-1xl text-left">
-        HeroTraveler is a social media platform for travel enthusiasts that allows users to create, share, plan, and book travel experiences curated by their peers and travel experts. HeroTraveler is built on a shared codebase for iOS and web using React and React Native.
+        Hero Traveler is a social media platform for travel enthusiasts that allows users to create, share, plan, and book travel experiences curated by their peers and travel experts. Hero Traveler is built on a shared codebase for iOS and web using React and React Native.
       </p>
       <h1 className="text-3xl font-bold text-left">Selected Work</h1>
       <div className="flex flex-col gap-10 md:gap-16">
