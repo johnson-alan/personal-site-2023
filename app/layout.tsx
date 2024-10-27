@@ -7,7 +7,6 @@ import { useEffect, useRef, useState } from 'react'
 import ProjectNavItem from './ProjectNavItem'
 import projects from './projects'
 import useWindowSize from './project/useWindowSize'
-import Head from 'next/head'
 
 const inter = Inter({ subsets: ['latin'] })
 

@@ -147,9 +147,9 @@ export default function HomeLister() {
         </div>
         <div className="flex flex-col gap-4">
           <SelectedWorkInformation
-              title="Time Tracking"
-              timePeriod="2024"
-              description="Time entry and admin approval flows achieving functional parity with industry leaders like Harvest"
+            title="Time Tracking"
+            timePeriod="2024"
+            description="Time entry and admin approvals flows achieving functional parity with industry leaders like Harvest"
           />
           <Image
             src={TimeTrackingEntryPic}
