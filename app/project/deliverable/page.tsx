@@ -149,7 +149,7 @@ export default function HomeLister() {
           <SelectedWorkInformation
             title="Time Tracking"
             timePeriod="2024"
-            description="Time entry and admin approvals flows achieving functional parity with industry leaders like Harvest"
+            description="Time entry and admin approval flows achieving functional parity with industry leaders like Harvest"
           />
           <Image
             src={TimeTrackingEntryPic}
