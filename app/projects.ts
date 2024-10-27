@@ -10,6 +10,13 @@ export interface Project {
 
 const projects = [
   {
+    name: 'Deliverable',
+    path: 'deliverable',
+    startYear: 2023,
+    endYear: 2024,
+    role: 'Founding Engineer (Fullstack)'
+  },
+  {
     name: 'HomeLister',
     path: 'homelister',
     startYear: 2019,
