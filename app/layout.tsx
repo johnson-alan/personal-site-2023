@@ -46,7 +46,7 @@ export default function RootLayout({
     : 'nav fixed z-10 flex flex-col left-4 bottom-4 md:left-24 md:bottom-24'
   const [navStyles, setNavStyles] = useState(navStylesBase)
 
-  const overlayStylesBase = 'z-40 absolute top-0 left-0 right-0 bottom-0 bg-backgroundColor opacity-100 fade'
+  const overlayStylesBase = 'z-40 absolute top-0 left-0 right-0 bottom-0 bg-background opacity-100 fade'
   const [overlayStyles, setOverlayStyles] = useState(overlayStylesBase)
   const overlayRef = useRef<HTMLDivElement>(null)
 

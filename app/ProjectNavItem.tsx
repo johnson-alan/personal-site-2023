@@ -19,7 +19,7 @@ const ProjectNavItem: FunctionComponent<NavItemProps> = ({ project }) => {
 
   const href = pathname === '/' ? `/project/${path}` : '/'
 
-  const navItemStyles = "w-full text-4xl font-bold text-left lg:text-6xl hover:text-blue-700 mt-[10px] fade bg-backgroundColor"
+  const navItemStyles = "w-full text-4xl font-bold text-left lg:text-6xl hover:text-blue-700 mt-[10px] fade bg-background"
 
   const onProjectPage = pathname !== '/'
   const highligted = onProjectPage && pathPart === path
@@ -60,13 +60,13 @@ const ProjectNavItem: FunctionComponent<NavItemProps> = ({ project }) => {
         </h2>
         {highligted && (
           <div className='relative fade-in-all opacity-0 h-0' ref={subtitleRef}>
-            <h3 className='text-2xl lg:text-3xl font-bold bg-backgroundColor'>
+            <h3 className='text-2xl lg:text-3xl font-bold bg-background'>
               {formattedDates}
             </h3>
-            <h3 className='text-1xl bg-backgroundColor'>
+            <h3 className='text-1xl bg-background'>
               {role}
             </h3>
-            <div className='h-8 w-full absolute -bottom-8 bg-gradient-to-b from-backgroundColor via-backgroundColor to-tranparent' />
+            <div className='h-8 w-full absolute -bottom-8 bg-linear-to-b from-background via-background to-transparent' />
           </div>
         )}
       </Link>
